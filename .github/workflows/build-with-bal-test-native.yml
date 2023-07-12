@@ -30,7 +30,7 @@ jobs:
               uses: ballerina-platform/ballerina-action/@nightly
               with:
                   args:
-                      test --native ./github
+                      test --graalvm ./github
               env:
                 JAVA_HOME: /usr/lib/jvm/default-jvm
                 ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
